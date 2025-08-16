@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #111;
+  padding: 15px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2e86de;
+  color: white;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #54a0ff;
+}
+
+section {
+  display: none;
+  padding: 20px;
+}
+
+section.active {
+  display: block;
+}
+
+.tool {
+  margin: 15px auto;
+  padding: 15px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}

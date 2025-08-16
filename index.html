@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Security Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🔒 Cyber Security Hub</h1>
+    <nav>
+      <button onclick="showSection('home')">الرئيسية</button>
+      <button onclick="showSection('tools')">الأدوات</button>
+      <button onclick="showSection('quiz')">الاختبار</button>
+      <button onclick="showSection('about')">حول</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- الرئيسية -->
+    <section id="home" class="active">
+      <h2>مرحبًا بك 👋</h2>
+      <p>تطبيق تعليمي شامل عن الأمن السيبراني.</p>
+    </section>
+
+    <!-- الأدوات -->
+    <section id="tools">
+      <h2>🛠️ أدوات الأمن السيبراني</h2>
+
+      <div class="tool">
+        <h3>مولّد كلمة مرور</h3>
+        <button onclick="generatePassword()">توليد</button>
+        <p id="passwordResult"></p>
+      </div>
+
+      <div class="tool">
+        <h3>فحص قوة كلمة المرور</h3>
+        <input type="text" id="passwordInput" placeholder="أدخل كلمة المرور">
+        <button onclick="checkStrength()">فحص</button>
+        <p id="strengthResult"></p>
+      </div>
+    </section>
+
+    <!-- الاختبار -->
+    <section id="quiz">
+      <h2>📖 اختبار سريع</h2>
+      <p>ما هو أقوى نوع من كلمات المرور؟</p>
+      <button onclick="answerQuiz(this, true)">مزيج من أحرف وأرقام ورموز</button>
+      <button onclick="answerQuiz(this, false)">123456</button>
+      <button onclick="answerQuiz(this, false)">كلمة السر</button>
+      <p id="quizResult"></p>
+    </section>
+
+    <!-- حول -->
+    <section id="about">
+      <h2>ℹ️ حول التطبيق</h2>
+      <p>تطبيق توعوي يهدف لتعليم أساسيات الأمن السيبراني بشكل مبسط.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
